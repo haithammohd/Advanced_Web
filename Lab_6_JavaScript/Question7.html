@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population function</title>
+</head>
+<body>
+    <script>
+        function PercentageOfWorld1(Population){
+            return (Population/7900)*100;   
+        }
+            let Ghana = PercentageOfWorld1(20000);
+            let Yemen = PercentageOfWorld1(4000);
+            let Canada= PercentageOfWorld1(7500);
+            console.log(Ghana,Yemen,Canada);
+        const PercentageOfWorld2 = function(Population){
+            return (Population/7900)*100;  
+        }
+        Ghana = PercentageOfWorld2(20000);
+        Yemen = PercentageOfWorld2(4000);
+        Canada= PercentageOfWorld2(7500);
+       console.log(Ghana,Yemen,Canada);
+        const PercentageOfWorld3 = population=>{
+            return (population/7900)*100;
+        }
+        Ghana = PercentageOfWorld3(20000);
+        Yemen = PercentageOfWorld3(4000);
+         Canada= PercentageOfWorld3(7500);
+        console.log(Ghana,Yemen,Canada);
+    </script>
+</body>
+</html>

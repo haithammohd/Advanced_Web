@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+        1st Number
+        <Input type="number" id="first"><br><br>
+        2nd Number
+    <input type="number" id="second"><br><br>
+        <button onclick="Multiply()">Multiply</button>&nbsp;
+        <button onclick="divide()">devide</button>    
+   <p id="rst"> The Result is:
+
+   </p>
+
+    <script>
+        function Multiply(){
+            let f = document.getElementById("first");
+            let s = document.getElementById("second");
+            let r = f.value * s.value;
+            document.getElementById("rst").innerHTML="The Result is:<br>" + r;
+        }
+        function divide(){
+            let f = document.getElementById("first");
+            let s = document.getElementById("second");
+            let r = f.value / s.value;
+            document.getElementById("rst").innerHTML="The Result is:<br>" + r;
+        }
+    </script>
+</body>
+</html> 

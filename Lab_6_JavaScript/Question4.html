@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <style>
+        td{
+            text-align: center;
+        }
+       div{
+        background-color: darkgrey;
+        width: fit-content;
+        padding: 10px;
+       }
+       body{
+        margin-left: 35%;
+       }
+    </style>
+</head>
+<body>
+    <div>
+
+   
+    <h1>Input Section</h1>
+    <table>
+        <th>
+            <td>
+                <h1>A</h1>
+                <input type="number" id="a">
+            </td>
+            <td>
+              <h1>B</B></h1>  
+              <input type="number" id="b">
+            </td>
+            <td>
+                <h1>C</h1>
+                <input type="number" id="c">
+            </td>
+        </th>
+        <tr>
+
+        </tr> 
+    </table><br><br>
+    <button onclick="Ascending()">Sort in Ascending order</button>&nbsp;&nbsp;
+    <button onclick="Discending()">Sort in Discending order</button> <br><br><br>
+    <h1>Output Section</h1>
+    <table>
+        <th>
+            <td>
+                <input type="number" id="d" disabled>
+            </td>
+            <td> 
+              <input type="number" id="e" disabled>
+            </td>
+            <td>
+                <input type="number" id="f"  disabled>
+            </td>
+        </th>
+        <tr>
+
+        </tr> 
+    </table>
+</div>
+<script>
+   
+    function Ascending(){
+        mama = [
+        Number(document.getElementById("a").value), 
+        Number (document.getElementById("b").value), 
+        Number(document.getElementById("c").value)
+        ];
+        mama.sort();
+        document.getElementById("d").value=mama[0];
+        document.getElementById("e").value=mama[1]; 
+        document.getElementById("f").value=mama[2];
+    }
+    function Discending(){
+        mama = [
+       Number(document.getElementById("a").value), 
+       Number(document.getElementById("b").value), 
+       Number(document.getElementById("c").value)
+        ];
+        mama.sort();
+        document.getElementById("d").value=mama[2];
+        document.getElementById("e").value=mama[1]; 
+        document.getElementById("f").value=mama[0];
+    }
+   
+</script>
+</body>
+</html>
