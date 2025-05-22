@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAnage Books</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/dataTables.dataTables.min.css">
+</head>
+<body>
+    <div class="bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">manage-members</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="Dashboard.html"><i class="bi bi-person-lines-fill me-2"></i>LibrarySystem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Manage Users.html"><i class="bi bi-person-lines-fill me-2"></i>Manage Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Manage Books.html"><i class="bi bi-person-lines-fill me-2"></i>Manage Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="manage members.html"><i class="bi bi-person-workspace me-2"></i>Manage Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="book-issuance.html"><i class="bi bi-person-badge-fill me-2"></i>book-issuance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Manage.html"><i class="bi bi-person-badge-fill me-2"></i>ManageReturn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="manage-students.html"><i class="bi bi-person-badge-fill me-2"></i>Reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <h3>Manage Books</h3>
+            <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addNewBooks">Add New Members</button>
+            <table id="Books Table" class="table table-striped">
+                <thead>
+                  <tr>
+                  <th>Title</th><th>ISBN</th><th>Author</th><th>Publisher</th><th>Status</th><th>Edit</th><th>Delete</th>
+              
+              </thead>
+                <tbody>
+                  <tr>
+                      <td>The Great Gastby</td><td>56233892923897878</td><td>F. scot Fizger</td><td>Scribner</td><td><button class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#uploadResultsModal">unavailable</button></td><td><button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#uploadResultsModal">Edit</button></td>
+                      <td><button class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#uploadResultsModal">Delete</button></td>
+                  </tr>
+                     <tr> <td>TO kill a molg</td><td>234567567</td><td>Harper lee</td><td>Harper parennial</td><td><button class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#uploadResultsModal">Available</button></td><td><button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#uploadResultsModal">Edit</button></td>
+                      <td><button class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#uploadResultsModal">Delete</button></td>
+                 
+                  
+                  </tbody>
+              </table>
+        </div>
+        <div class="modal fade" id="addNewBooks" tabindex="-1">
+            <div class="modal-dialog">
+              <form class="modal-content">
+                <div class="modal-header"><h5 class="modal-title">Add Books</h5></div>
+                <div class="modal-body">
+                    Title <br>
+                  <input type="text" class="form-control mb-2" placeholder="">
+                 ISBN<br>
+                  <input type="text" class="form-control mb-2" placeholder="">
+                  Author <br>
+                  <input type="text" class="form-control mb-2" placeholder="">
+                  Publisher <br>
+                  <input type="text" class="form-control mb-2" placeholder="">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">Save Books</button>
+                  <button class="btn btn-secondary">Cancel</button>
+                </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/dataTables.min.js"></script>
+    <script src="bootstrap/js/jquery.js" ></script>
+</body>
+</html>
